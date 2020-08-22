@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=iBroadcast Media Sync Lite
+Exec=ibroadcast-media-sync-lite
+Terminal=false
+Type=Application
+Icon=${SNAP}/meta/gui/ibroadcast-media-sync-lite.png
+StartupWMClass=iBroadcast Media Sync Lite
+Categories=Audio;
+Comment=MediaSync Lite is a very lean, powerful and simple uploader.
