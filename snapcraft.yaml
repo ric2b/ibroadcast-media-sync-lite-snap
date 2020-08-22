@@ -1,0 +1,28 @@
+name: ibroadcast-media-sync-lite
+version: master
+summary: MediaSync Lite is a very lean, powerful and simple uploader. 
+description: |
+    MediaSync Lite is a very lean, powerful and simple uploader for Windows, Mac and also Linux 
+    (however the Linux version lacks some of the features of Windows and Mac version). 
+    It is configurable to upload 1 - 6 files at the same time and skips files already 
+    in your library so you can run it over and over without duplicates. 
+    It also creates a debugging log which you can examine to troubleshoot any problems. 
+#license: ?
+
+base: core18
+confinement: strict
+grade: devel
+
+parts:
+  ibroadcast-media-sync-lite:
+    plugin: make
+    artifacts: [mediasynclite]
+    source: https://github.com/iBroadcastMediaServices/MediaSyncLiteLinux/archive/master.tar.gz
+    build-packages: [gcc, make, libgtk-3-dev, libcurl4-openssl-dev, openssl, libssl-dev, libjansson-dev]
+    stage-packages: [libgtk-3-dev, libcurl4-openssl-dev, openssl, libssl-dev, libjansson-dev, libgdk-pixbuf2.0-dev]
+
+apps:
+  ibroadcast-media-sync-lite:
+    extensions: [gnome-3-34]
+    command: mediasynclite
+    plugs: [network, home, removable-media]
