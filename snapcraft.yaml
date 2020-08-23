@@ -11,7 +11,7 @@ description: |
 
 base: core18
 confinement: strict
-grade: devel
+grade: stable
 
 parts:
   ibroadcast-media-sync-lite:
