@@ -7,7 +7,12 @@ description: |
     It is configurable to upload 1 - 6 files at the same time and skips files already 
     in your library so you can run it over and over without duplicates. 
     It also creates a debugging log which you can examine to troubleshoot any problems. 
-#license: ?
+license: GPL-3.0
+architectures:
+  - amd64
+  - i386
+  - arm64
+  - armhf
 
 base: core18
 confinement: strict
