@@ -9,7 +9,7 @@ description: |
     It also creates a debugging log which you can examine to troubleshoot any problems. 
 #license: ?
 
-base: core18
+base: core20
 confinement: strict
 grade: stable
 
