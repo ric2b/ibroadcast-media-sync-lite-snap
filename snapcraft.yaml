@@ -20,7 +20,7 @@ parts:
     prime: [usr/bin/mediasynclite, usr/share]
     source: https://github.com/iBroadcastMediaServices/MediaSyncLiteLinux/archive/master.tar.gz # the repo doesn't have tags/releases
     build-packages: [gcc, make, libgtk-3-dev, libcurl4-openssl-dev, openssl, libssl-dev, libjansson-dev]
-    stage-packages: [libgtk-3-dev, libcurl4-openssl-dev, openssl, libssl-dev, libjansson-dev]
+    stage-packages: [libgtk-3-dev, libcurl4-openssl-dev, openssl, libssl-dev, libjansson-dev, libasn1-8-heimdal, libcurl4, libgssapi3-heimdal, libhcrypto4-heimdal, libheimbase1-heimdal, libheimntlm0-heimdal, libhx509-5-heimdal, libjansson4, libkrb5-26-heimdal, libldap-2.4-2, libnghttp2-14, libroken18-heimdal, librtmp1, libsasl2-2, libssh-4, libwind0-heimdal]
 
 apps:
   ibroadcast-media-sync-lite:
