@@ -23,7 +23,7 @@ parts:
 
 apps:
   ibroadcast-media-sync-lite:
-    extensions: [gnome-3-34]
+    extensions: [gnome-3-38]
     command: mediasynclite
     plugs: [network, home, removable-media]
 
