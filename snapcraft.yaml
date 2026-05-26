@@ -10,11 +10,10 @@ description: |
 license: GPL-3.0
 architectures:
   - amd64
-  - i386
   - arm64
   - armhf
 
-base: core18
+base: core22
 confinement: strict
 grade: stable
 
