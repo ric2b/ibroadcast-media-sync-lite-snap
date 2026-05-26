@@ -8,12 +8,12 @@ description: |
     in your library so you can run it over and over without duplicates. 
     It also creates a debugging log which you can examine to troubleshoot any problems. 
 license: GPL-3.0
-architectures:
-  - amd64
-  - arm64
-  - armhf
+platforms:
+  amd64:
+  arm64:
+  armhf:
 
-base: core22
+base: core24
 confinement: strict
 grade: stable
 
@@ -35,6 +35,9 @@ apps:
     extensions: [gnome]
     command: mediasynclite
     plugs: [network, home, removable-media]
+    environment:
+      GTK_USE_PORTAL: "0"
+      GDK_DEBUG: no-portals
 
 layout:
   /usr/local/share/mediasynclite:
